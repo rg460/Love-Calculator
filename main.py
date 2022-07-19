@@ -29,10 +29,12 @@ total_love = l + o + v + e;
 # calculate love score by concantenate the totals of true and love , convert both to strings
 love_score = str(total_true) + str(total_love);
 # if statement to dertemine the users love score and phrase to go with love score
-if 10 < int(love_score or love_score) < 90:
-  print(f"Your Love Score is {love_score}, you go together like coke and mentos");
-elif 40 >= int(love_score) <= 50:
-   print(f"Your Love Score is {love_score}, you are alright together");
+if (love_score < 10) or (love_score > 90):
+  print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif (love_score >= 40) and (love_score <= 50):
+  print(f"Your score is {love_score}, you are alright together.")
+else:
+  print(f"Your score is {love_score}.")
 else:
   print(f"Your Love Score is {love_score}");
 
