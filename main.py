@@ -20,20 +20,22 @@ u = int(joined_str_lower_case.count("u"));
 e = int(joined_str_lower_case.count("e"));
 total_true = t + r + u + e;
 print(total_true);
-
-
 #  check how many times  joined_str_lower_case has a l,o,v,e in it .
 l = int(joined_str_lower_case.count("l"));
 o = int(joined_str_lower_case.count("0"));
 v = int(joined_str_lower_case.count("v"));
 e = int(joined_str_lower_case.count("e"));
 total_love = l + o + v + e;
-
-
 # calculate love score by concantenate the totals of true and love , convert both to strings
 love_score = str(total_true) + str(total_love);
-# print the users love score 
-print(f"Your Love Score is {love_score}")
+# if statement to dertemine the users love score and phrase to go with love score
+if 10 > int(love_score or love_score) < 90:
+  print(f"Your Love Score is {love_score}, you go together like coke and mentos");
+elif 40 >= int(love_score) <= 50:
+   print(f"Your Love Score is {love_score}, you are alright together");
+else:
+  print(f"Your Love Score is {love_score}");
+
 
 
 
